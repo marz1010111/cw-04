@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main()
+        static int Main()
         {
             Console.ForegroundColor = ConsoleColor.Cyan; // цвет консоли 
 
@@ -49,6 +49,15 @@
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("Flag not presented = {0}", currentDay);
             }
+
+            ConsoleKeyInfo key = Console.ReadKey();
+
+            if (key.Key == ConsoleKey.Escape)
+            {
+                return 1;
+            }
+
+            return 0;
 
         }
     }
