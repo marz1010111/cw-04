@@ -7,6 +7,7 @@ namespace Host
         static void Main(string[] args)
         {
             Class1.Print();
+            Console.ReadKey();
         }
     }
 }
